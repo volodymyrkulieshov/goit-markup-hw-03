@@ -35,13 +35,20 @@ p,
 ul {
   margin: 0;
 }
+ul {
+  padding: 0;
+}
 
-.conteiner {
+.container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid tomato;
+}
+.section {
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 
 .title {
@@ -56,6 +63,7 @@ button {
 }
 .link {
   text-decoration: none;
+  display: block;
 }
 .list {
   list-style: none;
@@ -63,6 +71,8 @@ button {
 
 /* -----------------------------HEADER------------------------- */
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-nav {
   font-weight: 500;
@@ -81,10 +91,6 @@ button {
 .logo-black {
   color: #000000;
 }
-
-/* .nav-link-accent {
-  color: var(--brand-accent);
-} */
 
 .nav-link {
   color: var(--title-color);
@@ -124,6 +130,9 @@ button {
 /* ------------------------HERO------------------------ */
 .hero {
   background-color: #2f303a;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--secondary-title-color);
@@ -133,6 +142,10 @@ button {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -146,6 +159,7 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  max-width: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -165,7 +179,9 @@ button {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+.benefits {
+  padding-top: 94px;
+}
 .benefits-title {
   color: var(--title-color);
 
@@ -174,6 +190,8 @@ button {
   line-height: 1.14;
 
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .benefits-text {
@@ -186,10 +204,15 @@ button {
 
 /* ---------------------opportunities----------------------- */
 
+.opportunities-title {
+  margin-bottom: 50px;
+}
+
 /* --------------------team ------------------------------- */
 
 .team {
   background-color: #f5f4fa;
+  margin-bottom: 50px;
 }
 
 .employeer-title {
@@ -199,6 +222,9 @@ button {
   text-align: center;
 
   color: var(--title-color);
+
+  margin-bottom: 10px;
+  padding-top: 30px;
 }
 .employeer-text {
   font-weight: 400;
@@ -207,18 +233,24 @@ button {
   text-align: center;
 
   color: var(--basic-color);
+
+  padding-bottom: 30px;
 }
 
 /* footer */
 
 .footer {
   background-color: var(--footer-bgc);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer-logo {
-  font-family: "Raleway";
+
+.logo-link {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 .logo-blue {
   color: var(--brand-accent);
@@ -233,6 +265,8 @@ button {
 
 .address-link {
   color: var(--secondary-title-color);
+
+  margin-bottom: 9px;
 }
 
 .address-link:hover,
@@ -243,6 +277,9 @@ button {
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail {
+  margin-bottom: 9px;
 }
 
 .footer-mail:hover,
@@ -257,6 +294,12 @@ button {
 
 /* ____________PORTFOLIO______________________________ */
 
+.examples {
+  padding-top: 100px;
+}
+.filter-list {
+  padding-bottom: 56px;
+}
 .filter-bnt-accent {
   font-family: inherit;
   font-weight: 500;
@@ -285,15 +328,20 @@ button {
   color: var(--secondary-title-color);
 }
 
-.examples-title {
+.example-img {
+  margin-bottom: 20px;
+}
+
+.example-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 
   color: var(--title-color);
+  margin-bottom: 4px;
 }
-.examples-text {
+.example-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--basic-color);
