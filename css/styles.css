@@ -39,6 +39,12 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -84,10 +90,9 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-}
-.logo-blue {
   color: var(--brand-accent);
 }
+
 .logo-black {
   color: #000000;
 }
@@ -214,6 +219,9 @@ button {
   background-color: #f5f4fa;
   margin-bottom: 50px;
 }
+.team-item {
+  background-color: #fff;
+}
 
 .employeer-title {
   font-weight: 500;
@@ -245,16 +253,6 @@ button {
   padding-bottom: 60px;
 }
 
-.logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-.logo-blue {
-  color: var(--brand-accent);
-}
 .logo-white {
   color: var(--secondary-title-color);
 }
@@ -263,10 +261,12 @@ button {
   font-style: normal;
 }
 
+.address-item {
+  margin-bottom: 9px;
+}
+
 .address-link {
   color: var(--secondary-title-color);
-
-  margin-bottom: 9px;
 }
 
 .address-link:hover,
@@ -277,9 +277,6 @@ button {
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
-}
-.footer-mail {
-  margin-bottom: 9px;
 }
 
 .footer-mail:hover,
@@ -326,10 +323,6 @@ button {
 .filter-bnt:focus {
   background-color: var(--brand-accent);
   color: var(--secondary-title-color);
-}
-
-.example-img {
-  margin-bottom: 20px;
 }
 
 .example-title {
