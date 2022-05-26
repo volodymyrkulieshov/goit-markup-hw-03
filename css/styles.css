@@ -41,8 +41,6 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -77,10 +75,18 @@ button {
 
 /* -----------------------------HEADER------------------------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
+
 .header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -97,9 +103,21 @@ button {
   color: #000000;
 }
 
-.nav-link {
-  color: var(--title-color);
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
 
+.nav-list .item + .item {
+  margin-left: 50px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -113,6 +131,16 @@ button {
 }
 
 /* -------------------header-contacts---------------------- */
+
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-list .item + .item {
+  margin-left: 40px;
+}
+
 .header-list,
 .header-item,
 .header-tel,
@@ -138,18 +166,15 @@ button {
 
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   color: var(--secondary-title-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  text-align: center;
-
   margin-bottom: 30px;
 }
 
@@ -157,12 +182,11 @@ button {
   font-family: inherit;
   color: var(--secondary-title-color);
   background-color: var(--brand-accent);
-
+  border: var(--brand-accent);
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   max-width: 200px;
 }
@@ -187,6 +211,13 @@ button {
 .benefits {
   padding-top: 94px;
 }
+.benefits-list {
+  display: flex;
+}
+/* .benefits-list .item + .item {
+  margin-left: 30px;
+} */
+
 .benefits-title {
   color: var(--title-color);
 
@@ -212,12 +243,14 @@ button {
 .opportunities-title {
   margin-bottom: 50px;
 }
+.opportunities-list {
+  display: flex;
+}
 
 /* --------------------team ------------------------------- */
 
 .team {
   background-color: #f5f4fa;
-  margin-bottom: 50px;
 }
 .team-item {
   background-color: #fff;
@@ -295,6 +328,9 @@ button {
   padding-top: 100px;
 }
 .filter-list {
+  display: flex;
+  align-items: center;
+
   padding-bottom: 56px;
 }
 .filter-bnt-accent {
