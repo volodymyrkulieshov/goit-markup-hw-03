@@ -99,7 +99,6 @@ button {
   font-size: 26px;
   line-height: 1.2;
   color: var(--brand-accent);
-  /* margin-bottom: 20px; */
 }
 
 .logo-black {
@@ -216,10 +215,12 @@ button {
 }
 .benefits-list {
   display: flex;
+  margin-left: -30px;
 }
-/* .benefits-list .item + .item {
+.benefits-list .item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-} */
+}
 
 .benefits-title {
   color: var(--title-color);
@@ -248,6 +249,12 @@ button {
 }
 .opportunities-list {
   display: flex;
+  align-items: center;
+  margin-left: -30px;
+}
+.opportunities-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 
 /* --------------------team ------------------------------- */
@@ -255,7 +262,17 @@ button {
 .team {
   background-color: #f5f4fa;
 }
+
+.team-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
 .team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
   background-color: #fff;
 }
 
@@ -294,7 +311,7 @@ button {
   font-size: 26px;
   line-height: 1.2;
   color: var(--brand-accent);
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
 .logo-white {
   color: var(--secondary-title-color);
@@ -344,8 +361,7 @@ button {
   padding-bottom: 56px;
 }
 
-.filter-list,
-.filter-item + .filter-item {
+.filter-list .filter-item + .filter-item {
   margin-left: 8px;
 }
 
@@ -384,6 +400,16 @@ button {
 .example-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.example-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .example-title {
@@ -391,6 +417,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding: 0 24px;
 
   color: var(--title-color);
   margin-bottom: 4px;
@@ -398,5 +425,11 @@ button {
 .example-text {
   font-size: 16px;
   line-height: 1.88;
+  padding: 0 24px;
+
   color: var(--basic-color);
+}
+
+.card-border {
+  border: 1px solid #eeeeee;
 }
