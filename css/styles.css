@@ -13,6 +13,7 @@
   --brand-accent: #2196f3;
   --basic-bgc: #ffffff;
   --footer-bgc: #2f303a;
+  --border-header: #ececec;
 }
 
 /* ------------------------------BODY-------------------------- */
@@ -50,11 +51,10 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 .section {
-  padding-top: 47px;
-  padding-bottom: 47px;
+  padding-bottom: 94px;
 }
 
 .title {
@@ -77,7 +77,7 @@ button {
 
 /* -----------------------------HEADER------------------------- */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-header);
 }
 
 .header-nav {
@@ -154,6 +154,13 @@ button {
   color: var(--basic-color);
 }
 
+.header-tel,
+.header-mail {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-tel:hover,
 .header-tel:focus {
   color: var(--brand-accent);
@@ -184,13 +191,11 @@ button {
   font-family: inherit;
   color: var(--secondary-title-color);
   background-color: var(--brand-accent);
-  border: var(--brand-accent);
-  border-radius: 4px;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  max-width: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -215,12 +220,21 @@ button {
 }
 .benefits-list {
   display: flex;
-  margin-left: -30px;
+
+  /* margin-left: -30px; */
 }
-.benefits-list .item {
-  flex-basis: calc(100% / 4 - 30px);
+
+.benefits-list .item:not(:first-child) {
   margin-left: 30px;
 }
+.benefits-list .item {
+  width: 270px;
+}
+
+/* .benefits-list .item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+} */
 
 .benefits-title {
   color: var(--title-color);
@@ -249,43 +263,53 @@ button {
 }
 .opportunities-list {
   display: flex;
-  align-items: center;
-  margin-left: -30px;
+
+  /* margin-left: -30px; */
 }
-.opportunities-item {
+
+.opportunities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .opportunities-item {
+
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-}
+} */
 
 /* --------------------team ------------------------------- */
 
 .team {
   background-color: #f5f4fa;
 }
+.team-title {
+  margin-bottom: 50px;
+}
 
 .team-list {
   display: flex;
-  align-items: center;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  /* margin-left: -30px; */
+}
+.team-item {
+  background-color: #fff;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.team-item {
+/* .team-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   background-color: #fff;
-}
+} */
 
 .employeer-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  color: var(--title-color);
-
   margin-bottom: 10px;
-  padding-top: 30px;
+  color: var(--title-color);
 }
 .employeer-text {
   font-weight: 400;
@@ -294,7 +318,10 @@ button {
   text-align: center;
 
   color: var(--basic-color);
+}
 
+.employeer-card {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -323,6 +350,9 @@ button {
 
 .address-item {
   margin-bottom: 9px;
+}
+.address-item:last-child {
+  margin-bottom: 0;
 }
 
 .address-link {
@@ -356,9 +386,9 @@ button {
 }
 .filter-list {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  padding-bottom: 56px;
+  padding-bottom: 50px;
 }
 
 .filter-list .filter-item + .filter-item {
@@ -370,12 +400,11 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--brand-accent);
   color: var(--secondary-title-color);
-  border-radius: 4px;
-  border: 1px var(--brand-accent);
+  /* border-radius: 4px;
+  border: 1px var(--brand-accent); */
 }
 
 .filter-bnt {
@@ -387,8 +416,8 @@ button {
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   color: var(--title-color);
-  border-radius: 4px;
-  border: 1px transparent;
+  /* border-radius: 4px;
+  border: 1px transparent; */
 }
 
 .filter-bnt:hover,
@@ -417,7 +446,6 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 0 24px;
 
   color: var(--title-color);
   margin-bottom: 4px;
@@ -425,11 +453,13 @@ button {
 .example-text {
   font-size: 16px;
   line-height: 1.88;
-  padding: 0 24px;
 
   color: var(--basic-color);
 }
 
 .card-border {
   border: 1px solid #eeeeee;
+  border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
