@@ -46,6 +46,19 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -54,6 +67,7 @@ img {
   /* outline: 1px solid tomato; */
 }
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -73,6 +87,8 @@ button {
 }
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* -----------------------------HEADER------------------------- */
@@ -196,6 +212,8 @@ button {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -203,18 +221,7 @@ button {
 }
 
 /* -----------------BENEFITS------------------------------- */
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+
 .benefits {
   padding-top: 94px;
 }
@@ -258,6 +265,9 @@ button {
 
 /* ---------------------opportunities----------------------- */
 
+.opportunities {
+  padding-top: 0;
+}
 .opportunities-title {
   margin-bottom: 50px;
 }
@@ -292,6 +302,9 @@ button {
 }
 .team-item {
   background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -388,7 +401,7 @@ button {
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-list .filter-item + .filter-item {
@@ -403,8 +416,8 @@ button {
   letter-spacing: 0.03em;
   background-color: var(--brand-accent);
   color: var(--secondary-title-color);
-  /* border-radius: 4px;
-  border: 1px var(--brand-accent); */
+  border-radius: 4px;
+  border: none;
 }
 
 .filter-bnt {
@@ -416,8 +429,8 @@ button {
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   color: var(--title-color);
-  /* border-radius: 4px;
-  border: 1px transparent; */
+  border-radius: 4px;
+  border: none;
 }
 
 .filter-bnt:hover,
@@ -460,6 +473,5 @@ button {
 .card-border {
   border: 1px solid #eeeeee;
   border-top: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 20px;
 }
